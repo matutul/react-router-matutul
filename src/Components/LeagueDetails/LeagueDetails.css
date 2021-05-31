@@ -1,0 +1,66 @@
+.header{
+    width: 100%;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, .6);
+}
+.banner{
+    max-width: 100%;
+}
+
+.details-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(12, 160, 206);
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 20px rgba(10, 10, 10, .4);
+}
+.details-text{
+    color: white;
+    width: 55%;
+    margin-left: 30px;
+}
+.details-text p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+}
+.cover-photo{
+    width: 35%;
+}
+.cover-photo img{
+    width: 100%;
+}
+
+.description{
+    margin: 30px 0;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.social-link{
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-link a{
+    margin: 10px;
+    transition: .2s;
+}
+.social-link a:hover{
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 1000px) {
+    .details-text{
+        width: 100%;
+    }
+    .cover-photo{
+        width: 100%;
+    }
+  }
