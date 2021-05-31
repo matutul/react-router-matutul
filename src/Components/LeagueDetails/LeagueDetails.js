@@ -25,12 +25,12 @@ const LeagueDetails = () => {
     // const { strGender, strLeagueAlternate, dateFirstEvent, strCountry, strSport, strBanner, strDescriptionEN, strTwitter, strWebsite, strYoutube} = league;
 
 
-    let image = ``;
+    let coverImage;
     if (league.strGender === 'Male') {
-        image = <img src={male} alt="Cover photo of the league, male" />;
+        coverImage = <img src={male} alt="Cover photo of the league, male" />;
     }
     else if(league.strGender === 'Female') {
-        image = <img src={female} alt="Cover photo of the league" />;
+        coverImage = <img src={female} alt="Cover photo of the league" />;
     }
     return (
         <div className="parent">
@@ -47,7 +47,7 @@ const LeagueDetails = () => {
                         <p><FontAwesomeIcon icon={faMars} /> Gender: {league.strGender}</p>
                     </div>
                     <div className="cover-photo">
-                        {image}
+                        {coverImage}
                     </div>
                 </div>
                 <div className="description">
