@@ -25,12 +25,12 @@ const LeagueDetails = () => {
     // const { strGender, strLeagueAlternate, dateFirstEvent, strCountry, strSport, strBanner, strDescriptionEN, strTwitter, strWebsite, strYoutube} = league;
 
 
-    let coverImage;
+    let coverImage = "";
     if (league.strGender === 'Male') {
-        coverImage = <img src={male} alt="Cover photo of the league, male" />;
+        coverImage = <img src={male} alt="Cover of the league for male" />;
     }
     else if(league.strGender === 'Female') {
-        coverImage = <img src={female} alt="Cover photo of the league" />;
+        coverImage = <img src={female} alt="Cover of the league for female" />;
     }
     return (
         <div className="parent">
